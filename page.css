@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+body{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:2rem;
+    background-color: #FAFAF9;
+    margin: 5rem 5rem;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #52525A;
+    
+}
+
+.title{
+    font-size: 32px;
+    font-style: bold;
+    color: #18181B;
+
+}
+.smalltext{
+    font-size: 20px;
+} 
+.checklists{
+    list-style: none;
+    display: grid;
+    margin:0 -55px;
+    font-size: 14px;
+
+}
+.checklists img{
+    float: left;
+    margin: -5px 5px;
+  
+}
+.checklists li{
+    margin: 10px;
+}
+.reviewers{
+    display: inline;
+   
+}
+
+.reviewers span{
+    
+    background-color: #F5C044;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.cards{
+    display: block;
+    height: fit-content;
+    font-size: 16px;
+}
+
+.card1,.card2{
+    display: inline;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: fit-content;
+    width:20rem;
+    margin: 32px -32px;
+    padding: 25px 25px;
+    
+    box-shadow: 0px 0px 2px #D4D4D8;
+  
+
+}
+.stars{
+    display: grid;
+    grid-auto-flow: column;
+  
+   
+}
+.stars li{
+    margin-left: -20px;
+    list-style: none;
+    position: relative;
+    left:15px ;
+    top: 7px;
+}
+#img1,#img2{
+    height: 35px;
+    margin: 0 -20px;
+    
+}
+.stars img{
+    height: 20px;
+}
+
+.card1
+{
+    float: right;
+}
+.card2{
+    float: left;
+}
+.name{
+    font-weight: bold;
+    margin: 0 20px;
+    color: #18181B;
+}
+.review{
+    margin: 10px 20px;
+}
+@media(min-width:1280px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+   
+    
+}
+@media(max-width:680px){
+    body {
+      
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "reviewers", "cards" ;
+
+    }
+}
